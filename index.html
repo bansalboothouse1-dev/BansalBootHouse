@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bansal Boot House | Quality Footwear at ₹500</title>
+    <link id="themeStylesheet" rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <span>UNBEATABLE SALE! UP TO 60% OFF</span>
+            <a href="#products" class="shop-now">SHOP NOW <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="main-nav">
+                <!-- Logo -->
+                <a href="#home" class="logo">
+                    <span class="logo-main">BANSAL</span>
+                    <span class="logo-sub">BOOT HOUSE</span>
+                </a>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">HOME</a></li>
+                    <li><a href="#products" class="nav-link">MEN</a></li>
+                    <li><a href="#products" class="nav-link">WOMEN</a></li>
+                    <li><a href="#products" class="nav-link">KIDS</a></li>
+                    <li><a href="#products" class="nav-link">SPORTS</a></li>
+                    <li><a href="#products" class="nav-link sale-link">SALE</a></li>
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li><a href="#contact" class="nav-link">CONTACT</a></li>
+                    <li class="nav-icon"><a href="#"><i class="fas fa-map-marker-alt"></i></a></li>
+                    <button id="themeToggle" class="theme-btn" style="
+                    background: linear-gradient(135deg, #8B0000 0%, #5A0000 100%);
+                    color: #FFFFFF;
+                    border: 2px solid #D4AF37;
+                    padding: 8px 16px;
+                    border-radius: 10px;
+                    font-weight: 600;
+                    font-size: 13px;
+                    cursor: pointer;
+                    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                    text-transform: uppercase;
+                    letter-spacing: 0.5px;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-left: 15px;
+                    font-family: 'Montserrat', sans-serif;
+                    box-shadow: 0 3px 10px rgba(139, 0, 0, 0.2);
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                ">
+                    🌙 Dark Mode
+                </button>                  
+                    <li class="nav-icon"><a href="#"><i class="far fa-user"></i></a></li>
+                </ul>
+                
+                <!-- Mobile Menu Toggle -->
+                <div class="mobile-toggle" id="mobileToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <span class="logo">BANSAL BOOT HOUSE</span>
+            <button class="mobile-close" id="mobileClose"><i class="fas fa-times"></i></button>
+        </div>
+        <ul class="mobile-nav">
+            <li><a href="#home" class="mobile-link active">HOME</a></li>
+            <li><a href="#products" class="mobile-link">MEN</a></li>
+            <li><a href="#products" class="mobile-link">WOMEN</a></li>
+            <li><a href="#products" class="mobile-link">KIDS</a></li>
+            <li><a href="#products" class="mobile-link">SPORTS</a></li>
+            <li><a href="#products" class="mobile-link sale-link">SALE</a></li>
+            <li><a href="#about" class="mobile-link">ABOUT US</a></li>
+            <li><a href="#contact" class="mobile-link">CONTACT</a></li>
+        </ul>
+        <div class="mobile-contact">
+            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+            <p><i class="fas fa-clock"></i> Mon-Sun: 10AM - 8PM</p>
+        </div>
+    </div>
+
+    <!-- Page Content -->
+    <main id="pageContent">
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <!-- Hero Banner -->
+            <div class="hero-banner">
+                <div class="hero-content">
+                    <h1 class="hero-title">QUALITY FOOTWEAR <br><span class="hero-highlight">STARTING AT ₹500</span></h1>
+                    <p class="hero-subtitle">Best quality shoes at unbeatable prices. Shop now before they're gone!</p>
+                    <div class="hero-buttons">
+                        <a href="#products" class="btn btn-primary">SHOP NOW</a>
+                        <a href="#products" class="btn btn-secondary">VIEW SALE</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Quality Footwear">
+                </div>
+            </div>
+
+            <!-- Sale Categories -->
+            <div class="sale-categories container">
+                <div class="category-card sale-card">
+                    <div class="sale-badge">20-30% OFF</div>
+                    <h3>CASUAL WEAR</h3>
+                    <p>Everyday comfort at discounted prices</p>
+                    <a href="#products" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card sale-card">
+                    <div class="sale-badge">40-50% OFF</div>
+                    <h3>FORMAL COLLECTION</h3>
+                    <p>Premium shoes for office & occasions</p>
+                    <a href="#products" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="category-card sale-card">
+                    <div class="sale-badge">60-70% OFF</div>
+                    <h3>CLEARANCE SALE</h3>
+                    <p>Limited stock at unbelievable prices</p>
+                    <a href="#products" class="category-link">Shop Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+
+            <!-- Featured Collections -->
+            <div class="collections-section">
+                <div class="container">
+                    <h2 class="section-title">DISCOVER OUR COLLECTION</h2>
+                    <div class="collections-grid">
+                        <div class="collection-card">
+                            <div class="collection-badge">ONLINE EXCLUSIVE</div>
+                            <img src="https://imagescdn.louisphilippe.com/img/app/product/3/39620728-19754683.jpg?auto=format&w=390" alt="Online Exclusive">
+                            <div class="collection-content">
+                                <h3>Premium Leather</h3>
+                                <p>UPTO 85% OFF</p>
+                                <a href="#products" class="btn btn-small">SHOP NOW</a>
+                            </div>
+                        </div>
+                        <div class="collection-card">
+                            <div class="collection-badge">FESTIVE & ETHNIC</div>
+                            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?ixlib=rb-4.0.3&auto=format&fit=crop&w-600&q=80" alt="Festive Collection">
+                            <div class="collection-content">
+                                <h3>Festive Special</h3>
+                                <p>Traditional designs for celebrations</p>
+                                <a href="#products" class="btn btn-small">EXPLORE</a>
+                            </div>
+                        </div>
+                        <div class="collection-card">
+                            <div class="collection-badge">WORK WEAR</div>
+                            <img src="https://5.imimg.com/data5/SELLER/Default/2024/12/469937024/HS/WV/QZ/191798954/high-end-fashion-street-style-casual-shoes-for-men.jpg" alt="Work Wear">
+                            <div class="collection-content">
+                                <h3>Durable Work Shoes</h3>
+                                <p>Safety & comfort for professionals</p>
+                                <a href="#products" class="btn btn-small">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Arrivals -->
+            <div class="new-arrivals container">
+                <div class="section-header">
+                    <h2 class="section-title">NEW ARRIVALS</h2>
+                    <a href="#products" class="view-all">View All <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="products-grid" id="homeProducts">
+                    <!-- Products loaded via JavaScript -->
+                </div>
+            </div>
+
+            <!-- Timeless Trends -->
+            <div class="trends-banner">
+                <div class="container">
+                    <div class="trends-content">
+                        <h2>TIMELESS TRENDS COLLECTION</h2>
+                        <p>Classic styles that never go out of fashion. Premium quality at affordable prices.</p>
+                        <a href="#products" class="btn btn-primary">EXPLORE COLLECTION</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brand Highlight -->
+            <div class="brand-highlight container">
+                <div class="brand-content">
+                    <h3>BANSAL QUALITY PROMISE</h3>
+                    <p>For over 25 years, we've been providing the best quality footwear at prices that everyone can afford. Our ₹500 range is famous across Mansa for durability and style.</p>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <span class="stat-number">25+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">Happy Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Shoe Models</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">₹500</span>
+                            <span class="stat-label">Starting Price</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="brand-image">
+                    <img src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Bansal Quality">
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Page -->
+        <section id="products" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="page-title">OUR PRODUCTS</h1>
+                    <p class="page-subtitle">Discover our wide range of affordable footwear for the whole family</p>
+                </div>
+                
+                <!-- Product Filters -->
+                <div class="product-filters">
+                    <div class="filter-category">
+                        <button class="filter-btn active" data-filter="all">ALL PRODUCTS</button>
+                        <button class="filter-btn" data-filter="men">MEN</button>
+                        <button class="filter-btn" data-filter="women">WOMEN</button>
+                        <button class="filter-btn" data-filter="kids">KIDS</button>
+                        <button class="filter-btn" data-filter="sports">SPORTS</button>
+                        <button class="filter-btn sale-filter" data-filter="sale">SALE</button>
+                    </div>
+                    <div class="filter-sort">
+                        <select id="sortProducts">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="newest">Newest First</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Products Grid -->
+                <div class="products-grid" id="productsGrid">
+                    <!-- Products loaded via JavaScript -->
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="load-more">
+                    <button id="loadMore" class="btn btn-secondary">LOAD MORE PRODUCTS</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="page-title">ABOUT BANSAL BOOT HOUSE</h1>
+                    <p class="page-subtitle">Your trusted footwear partner since 2021</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Our Story</h2>
+                        <p>Founded in 2021, Bansal Boot House began with a simple mission: to provide high-quality, affordable footwear to the hardworking people of Mansa. What started as a small store has grown into Mansa's most trusted footwear destination.</p>
+                        
+                        <h3>The ₹500 Promise</h3>
+                        <p>We made history with our iconic "₹500 Promise" - providing premium quality shoes at just ₹500. This commitment has made quality footwear accessible to thousands of families across the region.</p>
+                        
+                        <h3>Our Values</h3>
+                        <div class="values-grid">
+                            <div class="value-card">
+                                <i class="fas fa-handshake"></i>
+                                <h4>Trust & Quality</h4>
+                                <p>Every pair is checked for durability and comfort before it reaches you.</p>
+                            </div>
+                            <div class="value-card">
+                                <i class="fas fa-rupee-sign"></i>
+                                <h4>Affordable Pricing</h4>
+                                <p>Direct sourcing ensures the best prices without compromising quality.</p>
+                            </div>
+                            <div class="value-card">
+                                <i class="fas fa-users"></i>
+                                <h4>Customer First</h4>
+                                <p>Personalized service and satisfaction guaranteed on every purchase.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="about-cta">
+                            <a href="#contact" class="btn btn-primary">VISIT OUR STORE</a>
+                            <a href="#products" class="btn btn-secondary">SHOP NOW</a>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://content.jdmagicbox.com/comp/kangra/l6/9999p1892.1892.231117154344.v2l6/catalogue/shoe-point-shahpur-kangra-shoe-dealers-bykqt0g7zs.jpg">
+                        <br><br><br><br>
+                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bansal Boot House Store">
+                    </div>
+                </div>
+                
+                <!-- Testimonials -->
+                <div class="testimonials">
+                    <h2 class="section-title">WHAT OUR CUSTOMERS SAY</h2>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                <p>"I've been buying shoes from Bansal Boot House for 10 years. The quality at ₹500 is unbelievable! Best value in Mansa."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <strong>Rajesh Kumar</strong>
+                                <span>Regular Customer</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                <p>"My entire family shops here. School shoes for kids, formal for office, sports shoes - they have everything at amazing prices."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <strong>Priya Sharma</strong>
+                                <span>Homemaker</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">
+                                <p>"As a factory worker, I need durable shoes. Bansal's work shoes last longer than branded ones costing 3x the price."</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <strong>Harpreet Singh</strong>
+                                <span>Factory Worker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="container">
+                <div class="page-header">
+                    <h1 class="page-title">CONTACT US</h1>
+                    <p class="page-subtitle">Visit our store or get in touch</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>OUR STORE</h3>
+                            <p>Main Bazaar, Near City Hospital<br>Mansa, Punjab - 151505</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-phone"></i>
+                            <h3>PHONE NUMBERS</h3>
+                            <p>+91 98726-09201</p>
+                            <p class="contact-note">Mon-Sun: 10AM - 8PM</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>OPENING HOURS</h3>
+                            <p><strong>Monday - Saturday:</strong> 9:00 AM - 8:00 PM</p>
+                            <p><strong>Sunday:</strong> 10:00 AM - 7:00 PM</p>
+                        </div>
+                        <div class="contact-card">
+                            <i class="fas fa-headset"></i>
+                            <h3>CUSTOMER SERVICE</h3>
+                            <p>Exceptional Customer Service</p>
+                            <p class="service-number"> +91 98726-09201</p>
+                        </div>
+                    </div>
+                    
+                    <form id="contact-form">
+                        <input type="text" name="user_name" placeholder="Your Name" required />
+                        <input type="email" name="user_email" placeholder="Your Email" required />
+                        <input type="tel" name="user_phone" placeholder="Phone Number" required />
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+                
+                <!-- Map & Store Info -->
+                <div class="store-info">
+                    <div class="store-details">
+                        <h2>FIND OUR STORE</h2>
+                        <p>Visit us at our flagship store in Main Bazaar, Mansa. We offer free parking and wheelchair accessibility.</p>
+                        <div class="store-features">
+                            <span><i class="fas fa-exchange-alt"></i> Easy Exchange</span>
+                            <span><i class="fas fa-bolt"></i> Quick Service</span>
+                        </div>
+                    </div>
+                    <div class="store-map">
+                        <!-- Map placeholder - replace with actual map iframe -->
+                        <div class="map-container">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1727.7940400271584!2d75.39884753891424!3d29.9912659937376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjnCsDU5JzI4LjYiTiA3NcKwMjQnMDAuNSJF!5e0!3m2!1sen!2sin!4v1766675800300!5m2!1sen!2sin"
+                                width="100%" 
+                                height="250"
+                                style="border:0; border-radius: 8px;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Bansal Boot House Location Map">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BANSAL BOOT HOUSE</h3>
+                    <p>Quality footwear at affordable prices since 1995. Your trusted shoe destination in Mansa.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/Bansal-Boot-House-Mansa-100087367734459/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/bansal_boot_house_mansa/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.whatsapp.com/channel/0029Vb6GQMKCXC3MzYAyb808?utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGn-GW8Oxsx_VRF4IpjMBZCdSThyFxN3A-AHmvMFcoHOrSD07tRCa19m58KVZY_aem_3_UZ49MADdb7ZiE3T6IR8A"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.youtube.com/@bansalboothousemansa"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>SHOP</h4>
+                    <ul>
+                        <li><a href="#products">Men's Footwear</a></li>
+                        <li><a href="#products">Women's Footwear</a></li>
+                        <li><a href="#products">Kids' Shoes</a></li>
+                        <li><a href="#products">Sports Shoes</a></li>
+                        <li><a href="#products">Formal Shoes</a></li>
+                        <li><a href="#products">Sale & Offers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>SUPPORT</h4>
+                    <ul>
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#contact">Chat with Us</a></li>
+                        <li><a href="#contact">FAQ</a></li>
+                        <li><a href="#contact">Return Policy</a></li>
+                        <li><a href="#contact">Size Guide</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>COMPANY</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#about">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>NEWSLETTER</h4>
+                    <p>Subscribe for exclusive offers and updates</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your Email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                    <p class="app-download">Try our new App!</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-payment">
+                    <span>We Accept:</span>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fas fa-credit-card"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <i class="fab fa-google-pay"></i>
+                    <i class="fab fa-phonepe"></i>
+                </div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 Bansal Boot House Mansa. All Rights Reserved.</p>
+                    <p class="footer-location">INDIAN ENGLISH</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add this before your script.js -->
+    <script src="script.js"></script>
+</body>
+</html>
